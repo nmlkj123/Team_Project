@@ -1,0 +1,170 @@
+*{
+	border:none;
+	margin:0;
+	padding:0
+}
+
+
+
+a:link{	
+	color:#0054a6;
+	text-decoration:none;
+}
+
+
+ 
+#wrap{
+	top:0px;
+	margin:0px auto;
+	width:100%;
+	height:120px;
+	border-bottom: 1px solid #d9d9d9;
+	text-align: center;
+}
+
+.menu{
+	width:100%;
+	height:70px;
+	border-bottom: 1px solid #d9d9d9;
+	background:#FFFFFF url(../images/menubg.gif) repeat-x;
+}
+.menu .logo_main{
+	float: left;
+	margin-left: 170px;
+	
+}
+#ddmenu{
+
+	background:#FFFFFF url(../images/menubg.gif) repeat-x;
+	margin:0;
+	padding:0;
+	height:57px;
+	width:auto;
+	text-align: center;
+	display:inline-block;
+	margin-right: 230px; 
+	
+
+}
+
+
+
+#ddmenu li{
+	
+	list-style:none;
+	padding:16px 10px;
+	font:22px Tahoma,Arial;
+	width:auto;
+	display: inline-block;
+
+	
+}
+
+
+#ddmenu li a{
+	background:url(../images/top-dotted.gif) right no-repeat;
+	display:block;
+	padding:6px 6px;
+	text-decoration:none;
+	width:100px;
+	color:#353535;
+	text-transform:uppercase;
+	white-space:nowrap;
+	text-align:center;
+	font-weight: bold;
+}
+
+
+#ddmenu li a:hover{
+	background:url(../images/top-dotted.gif) right no-repeat;
+}
+
+
+
+#ddmenu li div{
+
+	margin:16px 0px 0px 10px ;
+	padding:0;
+	position:absolute;
+	margin-left: -100px;
+	text-align:center;
+	visibility:hidden;
+	width:auto;
+	white-space:nowrap;
+	line-height: 1.6;
+	font-weight: bold;
+	
+	
+}
+
+
+#ddmenu li div a{
+	display:inline;
+	
+	
+	
+}
+
+#ddmenu li div a{
+	width:auto;
+	background:url(../images/bottom-dotted.gif) right no-repeat;
+	display:inline;
+	color:#d9d9d9;
+	font-size:14px;
+	padding:3px 10px;
+}
+
+
+#ddmenu li div a:hover{
+	background:#FFFFFF url(../images/bottom-dotted.gif) right no-repeat;
+	padding:3px 10px;
+}
+
+
+/*슬라이드기능  */
+.jbFixed{
+
+	position:fixed;
+	top:0px;
+}
+
+
+#custom-search-input{
+	margin-top:5px;
+	margin-left:250px;
+	width:400px;
+    padding: 3px;
+    border: 2px solid #FF7100;
+    border-radius: 6px;
+    background-color: #fff;
+   
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+    
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #FF7100;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
+
+
+
