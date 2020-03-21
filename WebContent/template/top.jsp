@@ -1,8 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <link href="../css/style_1.css" type="text/css" rel="stylesheet" />
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
@@ -17,7 +16,7 @@
 	}
 	 
 	function side_close(){
-		$(this).css('color','#d9d9d9');	
+		$(this).css('color','#A6A6A6');	
 			
 	}
 	
@@ -28,18 +27,17 @@
 	}
 	 
 	function menu_close(){
-		$(this).find('>a').css('color','#353535');	
+			
 		$(this).find('div').css('visibility','hidden');
 		$(".top_fix").css('visibility','visible');
 	}
   
 </script>
-<style>
-body{
-	height:2000px;
-}
-</style>
+
 <div id="wrap" class="jbFixed" >
+	<div class="menu_top">
+		<a href="#">로그인 </a>
+	</div>
   <div class="menu" >
    <!-- 메뉴시작 -->
    <div class="logo_main">
@@ -48,7 +46,7 @@ body{
    </div>
    
     <ul id="ddmenu" >   	 
-      <li><a href="#">관광지</a>
+      <li><a href="../tourist/tourist.jsp">관광지</a>
          <div>
           <a href="http://www.JHTA.co.kr">전체</a>
           <a href="#">자연</a>
@@ -96,22 +94,15 @@ body{
    <!-- 메뉴 종료 -->
     
    </div>
-    
-    <div class="container top_fix">
-	<div class="row">
-        <div class="col-md-6">
-            <div id="custom-search-input">
-                <div class="input-group col-md-12">
-                    <input type="text" class="form-control input-sm" placeholder="검색" />
-                    <span class="input-group-btn">
-                        <button class="btn btn-info btn-lg" type="button">
-                            <i class="glyphicon glyphicon-search"></i>
-                        </button>
-                    </span>
-                </div>
-            </div>
-        </div>
-	</div>
-</div>
+ <div class="top_fix"> 
+	<form id="search-body">
+	  <button id="s-btn-body" type="submit">
+	    <span id="s-btn"></span>
+	  </button>
+	  <div id="s-form-body">
+	    <input id="s-form" type="text" placeholder="Search">
+	  </div>
+	</form>
+</div> 
  </div>
  
