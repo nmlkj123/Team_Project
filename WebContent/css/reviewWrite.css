@@ -1,0 +1,121 @@
+.rwwrap_out{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+	
+	
+}
+
+#rwwrap{
+       display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.6);
+      }
+      
+      .rwh1 {
+         margin-top:50px;
+         font-size:30px;
+         color:gray;
+         font-family:¸¼Àº °íµñ;
+      }
+      
+      .rwtablebox {
+      transition: opacity .39s;
+      background: #fff;
+      padding: 20px 40px;
+      margin-left: -350px;
+    padding: 40px;
+    border: 1px solid #ef6d00;
+    width: 600px;
+    height: auto;
+    opacity: 1;
+    top: 50px;
+    display: block;
+    position: absolute;
+	font-size: 13px;
+    left: 50%;
+      }
+      .rwtablebox td {
+        border-bottom: 1px solid #E6E6E6;
+        padding: 10px;
+      }
+    .rwcontent{
+    margin: auto;
+    padding: 0;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    }
+      
+    .rwtd0{
+         font-size:18px;
+         font-weight:bold;
+         color:gray;
+          text-align: center;
+          font-family: ¸¼Àº °íµñ;
+          margin-left:20px;
+          padding-bottom:30px; 
+      }
+      
+      .rwtd1{
+         font-size:18px;
+         font-weight:bold;
+         color:gray;
+          text-align: left;
+          font-family: ¸¼Àº °íµñ;
+          margin-left:20px; 
+      }
+      
+      
+      
+      .rwinput1 {
+         width:300px;
+         height:24px;
+     }
+     
+     .rwinput2 {
+         width:221px;
+         height:24px;
+     }
+     
+     .rwinput3 {
+         width:300px;
+         height:50px;
+     }
+     
+     .rwinput4 {
+         width:300px;
+         height:24px;
+     }
+     
+     .rwbutton1 {
+        border: 2px solid #F3E2A9;
+        border-radius: 5px;
+        width: 100px;
+        height: 30px;
+         margin: auto;
+        font-family: ¸¼Àº °íµñ;
+        font-size:14px;
+        color: #FAAC58;
+        background-color:white; 
+     }
+     
+     .rwbutton2 {
+          border: 1px solid #E6E6E6;
+          border-radius: 5px;
+        width: 100px;
+        height: 30px;   
+        font-family: ¸¼Àº °íµñ;
+        color: #FAAC58;
+        background-color:white; 
+         margin: auto;
+     }
+     

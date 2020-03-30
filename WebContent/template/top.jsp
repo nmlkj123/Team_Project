@@ -36,55 +36,72 @@
 
 <div id="wrap" class="jbFixed" >
 	<div class="menu_top">
-		<a href="#">로그인 </a>
+		<%
+		String id=(String)session.getAttribute("memId");
+		String name=(String)session.getAttribute("memName");
+		if(id==null){%>
+			<div style="margin-right: 80px; float: right;">
+			<a href="../member/login.jsp">로그인 </a>
+			</div>
+		<%}else if(id.equals("admin")){%>
+			<div style="margin-right: 80px; float: right;">
+			<a href="javascript:void(0)"><%=name %> 님 </a>
+			<a href="../member/logout.jsp">로그아웃 </a>
+			<a href="../admin/SpotList.jsp">관리자 </a>
+			</div>
+		<%} else{%>
+			<div style="margin-right: 80px; float: right;">
+			<a href="javascript:void(0)"><%=name %> 님 </a>
+			<a href="../member/logout.jsp">로그아웃 </a>
+			</div>
+		<%}%>
 	</div>
   <div class="menu" >
    <!-- 메뉴시작 -->
    <div class="logo_main">
-	   <a href="#"><img alt="" src="../image/logo.jpg" width="120px" height="62px">
+	   <a href="../main/main.jsp"><img alt="" src="../image/logo.jpg" width="120px" height="62px">
 	   </a>
    </div>
    
     <ul id="ddmenu" >   	 
       <li><a href="../tourist/tourist.jsp">관광지</a>
          <div>
-          <a href="http://www.JHTA.co.kr">전체</a>
-          <a href="#">자연</a>
-          <a href="#">문화관광</a>
-          <a href="#">테마관광지</a>     
-          <a href="#">도보</a>
-          <a href="#">레저</a>
-          <a href="#">섬속의섬</a>   
+          <a href="../tourist/tourist.jsp?deptno=">전체</a>
+          <a href="../tourist/tourist.jsp?deptno=10">자연</a>
+          <a href="../tourist/tourist.jsp?deptno=20">문화관광</a>
+          <a href="../tourist/tourist.jsp?deptno=40">테마관광지</a>     
+          <a href="../tourist/tourist.jsp?deptno=60">도보</a>
+          <a href="../tourist/tourist.jsp?deptno=30">레저</a>
+          <a href="../tourist/tourist.jsp?deptno=50">섬속의섬</a>   
          </div>
       </li>
       
-      <li><a href="#">맛집</a>
+      <li><a href="../restaurant/restaurant.jsp">맛집</a>
 		 <div>
-          <a href="http://www.JHTA.co.kr">전체</a>
-          <a href="#">향토음식</a>
-          <a href="#">한식</a> 
-          <a href="#">양식</a>
-          <a href="#">일식</a>  
-          <a href="#">중식</a>   
-          <a href="#">동남아식</a>
-          <a href="#">무슬림프렌들리</a>  
-          <a href="#">카페</a>     
+          <a href="../restaurant/restaurant.jsp?deptno=">전체</a>
+          <a href="../restaurant/restaurant.jsp?deptno=10">향토음식</a>
+          <a href="../restaurant/restaurant.jsp?deptno=20">한식</a> 
+          <a href="../restaurant/restaurant.jsp?deptno=30">양식</a>
+          <a href="../restaurant/restaurant.jsp?deptno=40">일식</a>  
+          <a href="../restaurant/restaurant.jsp?deptno=50">중식</a>   
+          <a href="../restaurant/restaurant.jsp?deptno=60">동남아식</a>
+          <a href="../restaurant/restaurant.jsp?deptno=70">할랄프렌들리식</a>  
+          <a href="../restaurant/restaurant.jsp?deptno=80">카페</a>     
          </div>
       </li>
       	
-      <li><a href="#">쇼핑</a>
+      <li><a href="../shopping/shopping.jsp">쇼핑</a>
   		 <div>
-          <a href="http://www.JHTA.co.kr">전체</a>
-          <a href="#">전체</a>
-          <a href="#">전통시장</a>
-          <a href="#">플리마켓</a>     
-          <a href="#">면세점</a>
-          <a href="#">상점/상가</a>
-          <a href="#">특산품</a>   
-          <a href="#">관광기념품</a> 
+          <a href="../shopping/shopping.jsp?deptno=">전체</a>
+          <a href="../shopping/shopping.jsp?deptno=10">특산품</a>
+          <a href="../shopping/shopping.jsp?deptno=20">전통시장</a>     
+          <a href="../shopping/shopping.jsp?deptno=30">상점.상가</a>
+          <a href="../shopping/shopping.jsp?deptno=40">면세점</a>
+          <a href="../shopping/shopping.jsp?deptno=50">플리마켓</a>   
+          <a href="../shopping/shopping.jsp?deptno=60">관광기념품</a> 
          </div>
       </li>
-      <li><a href="#">나의여행</a></li>
+      <li><a href="../member/myPage.jsp">나의여행</a></li>
     </ul>
     
     <!--  <input class="form-control input-sm" width="10px" height="10px" itemname="검색어"  >
@@ -95,12 +112,12 @@
     
    </div>
  <div class="top_fix"> 
-	<form id="search-body">
+	<form id="search-body" method="get" action="../main/search.jsp">
 	  <button id="s-btn-body" type="submit">
 	    <span id="s-btn"></span>
 	  </button>
 	  <div id="s-form-body">
-	    <input id="s-form" type="text" placeholder="Search">
+	    <input id="s-form" name="q" type="text" placeholder="Search">
 	  </div>
 	</form>
 </div> 

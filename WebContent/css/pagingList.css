@@ -1,0 +1,28 @@
+
+.pagingatag {
+	padding:8px;
+	margin-right:8px;
+	width:15px;
+	color:#000;
+	font:bold 18px tahoma;
+	border:1px solid #eee;
+	text-align:center;
+	text-decoration:none;
+}
+.pagingatag:hover, .pagingatag:focus {
+	color:#fff;
+	border:1px solid #f40;
+	background-color:#FF7100;
+}
+#currentPaging {
+	
+	color: red; 
+	text-decoration:none;
+	cursor: pointer;
+}
+#paging {
+	
+	color: black; 
+	text-decoration: none;
+	cursor: pointer;
+}

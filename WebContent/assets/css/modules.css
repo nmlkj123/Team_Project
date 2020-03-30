@@ -230,7 +230,7 @@ p {
   display: none;
 }
 
-a.btn, button {
+a.btn {
   background-color: #4d36bd;
   color: white;
   text-decoration: none;
@@ -242,7 +242,7 @@ a.btn, button {
   font-size: 1em;
   cursor: pointer;
 }
-a.btn:hover, button:hover {
+a.btn:hover {
   filter: brightness(1.1);
 }
 
@@ -266,9 +266,7 @@ input[type=search], input[type=text], input[type=email], input[type=tel] {
   padding: 0.4em;
 }
 
-textarea {
-  padding: 0.5em;
-}
+
 
 label {
   width: 9em;
@@ -285,20 +283,9 @@ label {
     display: flex;
   }
 }
-input {
-  width: 100%;
-  max-width: 18rem;
-  font-size: 1em;
-  font-family: sans-serif;
-}
 
-textarea {
-  width: 100%;
-  height: 12em;
-  max-width: 18rem;
-  font-size: 1em;
-  font-family: sans-serif;
-}
+
+
 
 /* Page Title Background */
 .MOD_PAGETITLEBACKGROUND div div {
@@ -339,11 +326,11 @@ textarea {
 }
 /* Feature1 */
 .MOD_FEATURE {
-  background: #f1f1f1;
+  background: #ffffff;
 }
 
 .MOD_FEATURE_Container {
-  border-bottom: 1px solid #b9b9b9;
+  
   background: white;
   display: block;
   text-decoration: none;

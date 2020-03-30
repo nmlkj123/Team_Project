@@ -22,9 +22,9 @@
 <body>
 <section >
   <div class="bxslider" >
-	  <div><img style="width:100% " src="../image/1.jpg" /></div> 
-	  <div><img style="width:100% "  src="../image/2.jpg" /></div> 
-	  <div><img  style="width:100% " src="../image/4.jpg" /></div>
+	  <div><img style="width:100% ;height: 450px;" src="../image/1.jpg" /></div> 
+	  <div><img style="width:100%;height: 450px; "  src="../image/7.jpg" /></div> 
+	  <div><img  style="width:100%;height: 450px; " src="../image/2.jpg" /></div>
   </div>
 
 </section>

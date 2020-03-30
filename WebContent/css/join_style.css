@@ -1,0 +1,75 @@
+        #wrap{
+        	
+                width:100%;
+            height:700px;
+            text-align:center;
+        }
+        
+        .h1 {
+           margin-top:50px;
+           font-size:30px;
+           color:gray;
+           font-family:¸¼Àº °íµñ;
+        }
+        
+        .tablebox {
+       
+           border:7px solid #FE9A2E;
+           border-radius: 40px 80px;
+           padding-top: 40px;
+           padding-left: 40px;
+           padding-right: 40px;
+           margin: 0 auto;
+           width: 600px;
+        }
+
+        .td1{
+        width:150px;
+        height:60px;
+           font-size:18px;
+           font-weight:bold;
+           color:gray;
+            text-align: center;
+            font-family: ¸¼Àº °íµñ;
+            margin-left:20px; 
+   }
+        
+        .input1 {
+           width:300px;
+           height:30px;
+       }
+       
+       .input2 {
+           width:221px;
+           height:30px;
+       }
+       
+       .input3 {
+           width:194px;
+           height:30px;
+       }
+       
+       .input4 {
+           width:247px;
+           height:30px;
+       }
+       
+       .input5 {
+      
+           width:140px;
+           height:30px;
+       }
+
+      .btn1{
+       height:30px;
+       }
+       
+       .btn2{
+       height:50px;
+       }
+              
+        .div1{
+        font-size:40px;
+        text-align:center;
+        font-family:¸¼Àº °íµñ;
+        }
